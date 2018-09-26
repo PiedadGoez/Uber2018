@@ -1,0 +1,16 @@
+
+--Punto 3
+
+--CREATE ROLE new_dba;
+
+CREATE USER DBAuser 
+IDENTIFIED BY DBAuser
+DEFAULT TABLESPACE uber 
+QUOTA UNLIMITED ON uber;
+    
+    
+GRANT DBA TO DBAuser;   
+    
+GRANT new_dba TO DBAuser WITH ADMIN OPTION;
+
+GRANT CONNECT TO DBAuser;
