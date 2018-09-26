@@ -1,0 +1,21 @@
+--4. create 2 profile
+--A
+
+
+CREATE PROFILE clerk  LIMIT
+SESSIONS_PER_USER       1
+IDLE_TIME               10
+PASSWORD_LIFE_TIME      40
+FAILED_LOGIN_ATTEMPTS   4;
+
+
+--B
+
+CREATE PROFILE development  LIMIT
+SESSIONS_PER_USER            2
+IDLE_TIME                   30
+PASSWORD_LIFE_TIME         100
+FAILED_LOGIN_ATTEMPTS       1;
+
+
+
