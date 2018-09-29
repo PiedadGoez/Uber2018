@@ -12,7 +12,7 @@ DATAFILE 'bigUber' SIZE 5G;
 
 
 
-
+ALTER SYSTEM SET UNDO_TABLESPACE = bdUndo;
 
 
 

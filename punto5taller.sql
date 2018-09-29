@@ -1,0 +1,40 @@
+
+
+--punto 5
+
+CREATE USER anchetotti 
+IDENTIFIED BY anchetotti
+DEFAULT TABLESPACE uber 
+QUOTA UNLIMITED ON uber
+PROFILE clerk;
+
+
+CREATE USER piedad 
+IDENTIFIED BY piedad
+DEFAULT TABLESPACE uber 
+QUOTA UNLIMITED ON uber
+PROFILE clerk;
+
+CREATE USER jham 
+IDENTIFIED BY jham
+DEFAULT TABLESPACE uber 
+QUOTA UNLIMITED ON uber
+PROFILE development;
+
+
+CREATE USER alberto 
+IDENTIFIED BY alberto
+DEFAULT TABLESPACE uber 
+QUOTA UNLIMITED ON uber
+PROFILE development;
+
+
+GRANT CONNECT TO anchetotti,piedad,jham,alberto;
+
+
+ALTER USER anchetotti ACCOUNT LOCK;
+
+
+
+
+
