@@ -1,6 +1,6 @@
 
 
---punto 5
+--punto 5 del taller
 
 CREATE USER anchetotti 
 IDENTIFIED BY anchetotti
@@ -31,10 +31,6 @@ PROFILE development;
 
 GRANT CONNECT TO anchetotti,piedad,jham,alberto;
 
-
 ALTER USER anchetotti ACCOUNT LOCK;
-
-
-
 
 
